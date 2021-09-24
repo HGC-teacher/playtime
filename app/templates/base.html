@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='css/pure-min.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='css/site.css') }}">
+        <title>Post Lockdown Games</title>
+    </head>
+    <body>
+        <div class="content">
+            <h1>Post Lockdown Games</h1>
+            <a href="{{ url_for('course_list') }}" class="pure-button">Games</a>
+            <a href="{{ url_for('student_list') }}" class="pure-button">Students</a>
+            <hr>
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
