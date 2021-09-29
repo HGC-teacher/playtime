@@ -17,3 +17,6 @@ class Game(db.Model):
     name = db.Column(db.Text)
     resources = db.Column(db.Text)
     description = db.Column(db.Text)
+
+    def __repr__(self):
+        return f'Game: {self.name}    Description: {self.description}'
